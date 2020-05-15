@@ -1,0 +1,11 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/bootstrap.js": "/js/bootstrap.js",
+    "/js/site/bootstrap.min.js": "/js/site/bootstrap.min.js",
+    "/js/site/jquery.min.js": "/js/site/jquery.min.js",
+    "/js/site/jquery-3.4.1.slim.min.js": "/js/site/jquery-3.4.1.slim.min.js",
+    "/js/site/popper.min.js": "/js/site/popper.min.js",
+    "/css/site/bootstrap.min.css": "/css/site/bootstrap.min.css",
+    "/css/site/cover.css": "/css/site/cover.css"
+}
