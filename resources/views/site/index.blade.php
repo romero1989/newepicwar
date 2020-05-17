@@ -15,7 +15,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
 
     <!-- Bootstrap core CSS -->
-    <link href="{{asset('../css/site/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="/public/css/site/bootstrap.min.css" rel="stylesheet">
     <script src="{{asset('../js/site/jquery.min.js')}}"></script>
     <script src="{{asset('../js/site/jquery-3.4.1.slim.min.js')}}"></script>
     <script src="{{asset('../js/site/popper.min.js')}}"></script>
@@ -44,7 +44,7 @@
 
     </style>
     <!-- Custom styles for this template -->
-    <link href="{{asset('../css/site/cover.css')}}" rel="stylesheet">
+    <link href="/public/css/site/cover.css" rel="stylesheet">
 
 </head>
 
