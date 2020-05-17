@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('site/index');
-});
+//Route::get('/', function () {
+//    return view('site/index');
+//});
 
 Auth::routes();
 
-//Route::get('/', 'HomeController@webindex')->name('webindex');
+Route::get('/', 'HomeController@webindex')->name('webindex');
 
 // Authentication Routes...
 //Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');

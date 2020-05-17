@@ -12,22 +12,28 @@ then
     mv public/css css
 fi
 
-if [ -d "public/favicon.ico" ]
+if [ -f "public/favicon.ico" ]
 then
     echo "Movendo arquivo favicon"
     mv public/favicon.ico favicon.ico
 fi
 
-if [ -d "public/robots.txt" ]
+if [ -f "public/robots.txt" ]
 then
     echo "Movendo arquivo robots"
     mv public/robots.txt robots.txt
 fi
 
-if [ -d "public/mix-manifest.json" ]
+if [ -f "public/mix-manifest.json" ]
 then
     echo "Movendo arquivo mix-manifest.json"
     mv public/mix-manifest.json mix-manifest.json
+fi
+
+if [ -f "public/.htaccess" ]
+then
+    echo "Movendo arquivo htaccess"
+    mv public/.htaccess .htaccess
 fi
 
 # activate maintenance mode
