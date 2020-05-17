@@ -38,6 +38,6 @@ class HomeController extends Controller
 
     public function webindex()
     {
-        return view('app/home');
+        return view('site.index');
     }
 }
