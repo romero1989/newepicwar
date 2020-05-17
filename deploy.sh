@@ -38,7 +38,7 @@ php artisan down
 
 # update PHP dependencies
 #export COMPOSER_HOME='/tmp/composer'
-php composer.phar install --optimize-autoloader --no-dev
+php -d allow_url_fopen=On composer.phar install --optimize-autoloader --no-dev
 	# --no-interaction	Do not ask any interactive question
 	# --no-dev		Disables installation of require-dev packages.
 	# --prefer-dist		Forces installation from package dist even for dev versions.
