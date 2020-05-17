@@ -13,27 +13,19 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
-     * Show the application dashboard.
+     * Show site index
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
     {
-        return view('app/home');
+        return view('site.index');
     }
 
-    /**
-     * Show the application Guild Mark upload file.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function guild()
-    {
-        return view('app/guildmark');
-    }
+
 
 }

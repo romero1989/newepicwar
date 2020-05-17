@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', 'HomeController@webindex')->name('webindex');
+Route::get('/', 'SiteController@index')->name('webindex');
 
 // Authentication Routes...
 //Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
