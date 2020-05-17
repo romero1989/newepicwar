@@ -1,40 +1,40 @@
 #!/bin/sh
 
-if [ -d "public/js" ]
-then
-    echo "Movendo pasta js"
-    mv public/js js
-fi
-
-if [ -d "public/css" ]
-then
-    echo "Movendo pasta css"
-    mv public/css css
-fi
-
-if [ -f "public/favicon.ico" ]
-then
-    echo "Movendo arquivo favicon"
-    mv public/favicon.ico favicon.ico
-fi
-
-if [ -f "public/robots.txt" ]
-then
-    echo "Movendo arquivo robots"
-    mv public/robots.txt robots.txt
-fi
-
-if [ -f "public/mix-manifest.json" ]
-then
-    echo "Movendo arquivo mix-manifest.json"
-    mv public/mix-manifest.json mix-manifest.json
-fi
-
-if [ -f "public/.htaccess" ]
-then
-    echo "Movendo arquivo htaccess"
-    mv public/.htaccess .htaccess
-fi
+#if [ -d "public/js" ]
+#then
+#    echo "Movendo pasta js"
+#    mv public/js js
+#fi
+#
+#if [ -d "public/css" ]
+#then
+#    echo "Movendo pasta css"
+#    mv public/css css
+#fi
+#
+#if [ -f "public/favicon.ico" ]
+#then
+#    echo "Movendo arquivo favicon"
+#    mv public/favicon.ico favicon.ico
+#fi
+#
+#if [ -f "public/robots.txt" ]
+#then
+#    echo "Movendo arquivo robots"
+#    mv public/robots.txt robots.txt
+#fi
+#
+#if [ -f "public/mix-manifest.json" ]
+#then
+#    echo "Movendo arquivo mix-manifest.json"
+#    mv public/mix-manifest.json mix-manifest.json
+#fi
+#
+#if [ -f "public/.htaccess" ]
+#then
+#    echo "Movendo arquivo htaccess"
+#    mv public/.htaccess .htaccess
+#fi
 
 # activate maintenance mode
 php artisan down
