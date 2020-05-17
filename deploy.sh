@@ -1,10 +1,34 @@
 #!/bin/sh
 
-mv public/js js
-mv public/css css
-mv public/favicon.ico favicon.ico
-mv public/robots.txt robots.txt
-mv public/mix-manifest.json mix-manifest.json
+if [ -d "public/js" ]
+then
+    echo "Movendo pasta js"
+    mv public/js js
+fi
+
+if [ -d "public/css" ]
+then
+    echo "Movendo pasta css"
+    mv public/css css
+fi
+
+if [ -d "public/favicon.ico" ]
+then
+    echo "Movendo arquivo favicon"
+    mv public/favicon.ico favicon.ico
+fi
+
+if [ -d "public/robots.txt" ]
+then
+    echo "Movendo arquivo robots"
+    mv public/robots.txt robots.txt
+fi
+
+if [ -d "public/mix-manifest.json" ]
+then
+    echo "Movendo arquivo mix-manifest.json"
+    mv public/mix-manifest.json mix-manifest.json
+fi
 
 # activate maintenance mode
 php artisan down
