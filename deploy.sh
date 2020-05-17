@@ -1,10 +1,10 @@
 #!/bin/sh
 
-mv '/var/www/html/newepicwar.com.br/web/public/js' '/var/www/html/newepicwar.com.br/public/js'
-mv '/var/www/html/newepicwar.com.br/web/public/css' '/var/www/html/newepicwar.com.br/public/css'
-mv '/var/www/html/newepicwar.com.br/web/public/favicon.ico' '/var/www/html/newepicwar.com.br/public/favicon.ico'
-mv '/var/www/html/newepicwar.com.br/web/public/favicon.robots.txt' '/var/www/html/newepicwar.com.br/public/robots.txt'
-mv '/var/www/html/newepicwar.com.br/web/public/mix-manifest.json' '/var/www/html/newepicwar.com.br/public/mix-manifest.json'
+mv public/js js
+mv public/css css
+mv public/favicon.ico favicon.ico
+mv public/robots.txt robots.txt
+mv public/mix-manifest.json mix-manifest.json
 
 # activate maintenance mode
 php artisan down
@@ -14,7 +14,7 @@ php artisan down
 
 # update PHP dependencies
 #export COMPOSER_HOME='/tmp/composer'
-#composer install --no-interaction --no-dev --prefer-dist
+php composer.phar install --optimize-autoloader --no-dev
 	# --no-interaction	Do not ask any interactive question
 	# --no-dev		Disables installation of require-dev packages.
 	# --prefer-dist		Forces installation from package dist even for dev versions.
