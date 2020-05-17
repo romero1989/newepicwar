@@ -35,4 +35,9 @@ class HomeController extends Controller
     {
         return view('app/guildmark');
     }
+
+    public function webindex()
+    {
+        return view('app/home');
+    }
 }
