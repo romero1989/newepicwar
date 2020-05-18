@@ -56,14 +56,14 @@
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
-        <div class="inner">
-            <h3 class="masthead-brand">Wyd</h3>
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Contact</a>
-            </nav>
-        </div>
+        {{--        <div class="inner">--}}
+        {{--            <h3 class="masthead-brand">Wyd</h3>--}}
+        {{--            <nav class="nav nav-masthead justify-content-center">--}}
+        {{--                <a class="nav-link active" href="#">Home</a>--}}
+        {{--                <a class="nav-link" href="#">Features</a>--}}
+        {{--                <a class="nav-link" href="#">Contact</a>--}}
+        {{--            </nav>--}}
+        {{--        </div>--}}
         <br>
         <br>
         <br>
@@ -110,29 +110,17 @@
                                                 color="#fffff" ;=""><b>DOWNLOAD</b></font></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="https://medium.astarothwyd.com.br/site/load/ranking"><font
-                                                color="#fffff" ;=""><b>RANKING</b></font></a>
+                                        <a class="nav-link" href="#" data-target="A"><font color="#fffff" ;=""><b>RANKING</b></font></a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="https://medium.astarothwyd.com.br/site/load/donate"><font
                                                 color="#fffff" ;=""><b>DOAÇÕES</b></font></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="https://medium.astarothwyd.com.br/site/load/droplist"><font
-                                                color="#fffff" ;=""><b>DROPLIST</b></font></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="https://forum.astarothwyd.com.br"><font color="#fffff"
-                                                                                                          ;=""><b>FORUM</b></font></a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="nav-link" href="https://medium.astarothwyd.com.br/site/load/regras"><font
                                                 color="#fffff" ;=""><b>REGRAS</b></font></a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="https://discord.gg/JPc4XcA"><font color="#fffff"
-                                                                                                    ;=""><b>DISCORD</b></font></a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </nav>
@@ -322,7 +310,7 @@
                                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                                 @error('password')
-                                                    <span class="invalid-feedback" role="alert">
+                                                <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>
                                                     </span>
                                                 @enderror
@@ -330,16 +318,16 @@
                                         </div>
                                     </div>
 
-{{--                                    <div class="form-group row">--}}
-{{--                                        <div class="col-md-12">--}}
-{{--                                            <div class="form-check">--}}
-{{--                                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>--}}
-{{--                                                <label class="form-check-label" for="remember">--}}
-{{--                                                    {{ __('Lembrar-me') }}--}}
-{{--                                                </label>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
+                                    {{--                                    <div class="form-group row">--}}
+                                    {{--                                        <div class="col-md-12">--}}
+                                    {{--                                            <div class="form-check">--}}
+                                    {{--                                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>--}}
+                                    {{--                                                <label class="form-check-label" for="remember">--}}
+                                    {{--                                                    {{ __('Lembrar-me') }}--}}
+                                    {{--                                                </label>--}}
+                                    {{--                                            </div>--}}
+                                    {{--                                        </div>--}}
+                                    {{--                                    </div>--}}
 
                                     <div class="form-group row">
                                         <div class="col-md-12">
@@ -365,111 +353,114 @@
                     </div>
                 </div>
                 <br>
+
                 <div class="row">
                     <div class="col-md-12">
-                        <iframe src="https://discordapp.com/widget?id=576837955411378209&theme=dark" width="320" height="500"
-                                allowtransparency="true" frameborder="0"></iframe>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="fb-page" data-href="https://www.facebook.com/WYDRaidHut/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/WYDRaidHut/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WYDRaidHut/">WYD Origem / Asgard</a></blockquote></div>
+                        <div class="fb-page" data-href="https://www.facebook.com/NewEpicWar" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/NewEpicWar" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/NewEpicWar">New Epic War 7.73</a></blockquote></div>
                     </div>
                 </div>
 
+                <br>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <iframe src="https://discordapp.com/widget?id=576837955411378209&theme=dark" width="320" height="500" allowtransparency="true" frameborder="0"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
 
         <br>
 
-        <div class="row inner">
-            <div class="col-md-6">
-                <div class="card bg-dark">
-                    <div class="card-header text-center font-weight-bold font-size-titulo">
-                        Top Players
-                    </div>
+        <div id="A">
+            <div class="row inner">
+                <div class="col-md-6">
+                    <div class="card bg-dark">
+                        <div class="card-header text-center font-weight-bold font-size-titulo">
+                            Top Players
+                        </div>
 
-                    <div class="card-body">
+                        <div class="card-body">
 
-                        <table class="table table-bordered table-dark rounded">
-                            <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Score</th>
-                                <th scope="col">Nickname</th>
-                                <th scope="col">Level</th>
-                                <th scope="col">Evolução</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>800</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>750</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>699</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div></div>
-            </div>
-            <div class="col-md-6">
-                <div class="card bg-dark">
-                    <div class="card-header text-center font-weight-bold font-size-titulo">
-                        Top Guilds
-                    </div>
+                            <table class="table table-bordered table-dark rounded">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Score</th>
+                                    <th scope="col">Nickname</th>
+                                    <th scope="col">Level</th>
+                                    <th scope="col">Evolução</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>800</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>750</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>699</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-dark">
+                        <div class="card-header text-center font-weight-bold font-size-titulo">
+                            Top Guilds
+                        </div>
 
-                    <div class="card-body">
+                        <div class="card-body">
 
-                        <table class="table table-bordered table-dark rounded">
-                            <thead>
-                            <tr>
-                                <th scope="col">Canal</th>
-                                <th scope="col">Cidade</th>
-                                <th scope="col">Emblema</th>
-                                <th scope="col">Tempo</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Armia</td>
-                                <td><img width="16" height="16" src="http://1.bp.blogspot.com/-WgqO13PLoUY/UMsgnLdHhrI/AAAAAAAAAGI/ex-Ey6AYwAg/s1600/los2.jpg"></td>
-                                <td>02:00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Thornton</td>
-                                <td><img width="16" height="16" src="http://2.bp.blogspot.com/-s-GrPZAbNhM/UMsgf6hONpI/AAAAAAAAAGA/9iRYETH5Yds/s1600/los2preto.jpg"></td>
-                                <td>03:00</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Erion</td>
-                                <td><img width="16" height="16" src="http://1.bp.blogspot.com/-WgqO13PLoUY/UMsgnLdHhrI/AAAAAAAAAGI/ex-Ey6AYwAg/s1600/los2.jpg"></td>
-                                <td>07:00</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                            <table class="table table-bordered table-dark rounded">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Canal</th>
+                                    <th scope="col">Cidade</th>
+                                    <th scope="col">Emblema</th>
+                                    <th scope="col">Tempo</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Armia</td>
+                                    <td><img width="16" height="16" src="http://1.bp.blogspot.com/-WgqO13PLoUY/UMsgnLdHhrI/AAAAAAAAAGI/ex-Ey6AYwAg/s1600/los2.jpg"></td>
+                                    <td>02:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Thornton</td>
+                                    <td><img width="16" height="16" src="http://2.bp.blogspot.com/-s-GrPZAbNhM/UMsgf6hONpI/AAAAAAAAAGA/9iRYETH5Yds/s1600/los2preto.jpg"></td>
+                                    <td>03:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Erion</td>
+                                    <td><img width="16" height="16" src="http://1.bp.blogspot.com/-WgqO13PLoUY/UMsgnLdHhrI/AAAAAAAAAGI/ex-Ey6AYwAg/s1600/los2.jpg"></td>
+                                    <td>07:00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <br>
 
         <div class="text-center">
@@ -527,6 +518,15 @@
 </div>
 
 <script>window.jQuery || document.write('<script src="/public/js/site/jquery-3.4.1.slim.min.js"><\/script>')</script>
+<script>
+    $( '.searchbychar' ).click(function() {
+
+        $('html, body').animate({
+            scrollTop: $('.searchbychar').attr('id').offset().top
+        }, 2000);
+
+    });
+</script>
 
 </body>
 </html>
