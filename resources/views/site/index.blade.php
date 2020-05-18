@@ -291,14 +291,15 @@
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <input id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                                <input id="login" type="text"
+                                                       class="form-control{{ $errors->has('name') || $errors->has('email') ? ' is-invalid' : '' }}"
+                                                       name="login" value="{{ old('name') ?: old('email') }}" required autofocus>
 
-
-                                                @error('name')
-                                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                                @enderror
+                                                @if ($errors->has('name') || $errors->has('email'))
+                                                    <span class="invalid-feedback">
+                                                        <strong>{{ $errors->first('name') ?: $errors->first('email') }}</strong>
+                                                    </span>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
