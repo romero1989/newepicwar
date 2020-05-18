@@ -291,10 +291,10 @@
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                                <input id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
 
-                                                @error('email')
+                                                @error('name')
                                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -516,7 +516,7 @@
 
     <footer class="mastfoot mt-auto">
         <div class="inner">
-            <p> Copyright @ 2019 | Todos os direitos reservados a <a href="#">{{ config('app.name', 'New Epic War') }}</a> <br>
+            <p> Copyright @ 2020 | Todos os direitos reservados a <a href="#">{{ config('app.name', 'New Epic War') }}</a> <br>
                 Desenvolvido por <a href="#">@rgs</a> e impulsionado por <a href="https://getbootstrap.com/">Bootstrap </a> e <a href="https://laravel.com/"> Laravel</a>
             </p>
 
