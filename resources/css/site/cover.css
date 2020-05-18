@@ -123,3 +123,9 @@ body {
 .font-size-titulo{
     font-size: 1.5em;
 }
+
+.text-center {
+    text-align: center !important;
+}
+
+
