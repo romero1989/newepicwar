@@ -14,7 +14,7 @@ class AddColumnUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-//            $table->string('senha_numerica');
+            $table->string('senha_numerica');
             $table->integer('cargo')->default(0);
             $table->date('data');
             $table->string('alteracao');
