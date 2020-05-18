@@ -364,7 +364,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <iframe src="https://discordapp.com/widget?id=576837955411378209&theme=dark" width="320" height="500" allowtransparency="true" frameborder="0"></iframe>
+                        <iframe src="https://discordapp.com/widget?id=706361795883040789&theme=dark" width="330" height="500" allowtransparency="true" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
