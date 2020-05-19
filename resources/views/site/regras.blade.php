@@ -61,9 +61,9 @@
                     </tbody>
                 </table>
             </div>
-            <div class="callout callout-success">
+            <div class="callout callout-warning">
                 <h4>Observações</h4>
-                <p>Essa grade de punição serve apenas como referência e todos os casos serão analisados pelo [ADM] que então, tomará a decisão da punição. As punições sendo menor de  <code class="highlighter-rouge"> [07/15/30 Dias] ou Permanente </code>, inclusive para denúncias não citadas nas regras.</p>
+                <p>Essa grade de punição serve apenas como referência e todos os casos serão analisados pelo [ADM] que então, tomará a decisão da punição. As punições sendo menor de  <code class="highlighter-red"> [07/15/30 Dias] ou Permanente </code>, inclusive para denúncias não citadas nas regras.</p>
             </div>
         </div>
 
