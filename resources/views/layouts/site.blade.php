@@ -15,11 +15,11 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
 
     <!-- Bootstrap core CSS -->
-    <link href="/public/css/site/bootstrap.min.css" rel="stylesheet">
-    <script src="/public/js/site/jquery.min.js"></script>
-    <script src="/public/js/site/jquery-3.4.1.slim.min.js"></script>
-    <script src="/public/js/site/popper.min.js"></script>
-    <script src="/public/js/site/bootstrap.min.js"></script>
+    <link href="css/site/bootstrap.min.css" rel="stylesheet">
+    <script src="js/site/jquery.min.js"></script>
+    <script src="js/site/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/site/popper.min.js"></script>
+    <script src="js/site/bootstrap.min.js"></script>
 
     {{--    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">--}}
     {{--    <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>--}}
@@ -44,7 +44,7 @@
 
     </style>
     <!-- Custom styles for this template -->
-    <link href="/public/css/site/cover.css" rel="stylesheet">
+    <link href="css/site/cover.css" rel="stylesheet">
 
 </head>
 
@@ -86,7 +86,7 @@
 
 </div>
 
-<script>window.jQuery || document.write('<script src="/public/js/site/jquery-3.4.1.slim.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="js/site/jquery-3.4.1.slim.min.js"><\/script>')</script>
 
 </body>
 </html>
