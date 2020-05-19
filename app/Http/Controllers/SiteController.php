@@ -15,4 +15,9 @@ class SiteController extends Controller
     {
         return view('site/pagina');
     }
+
+    public function regras()
+    {
+        return view('site/regras');
+    }
 }

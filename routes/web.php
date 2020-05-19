@@ -21,6 +21,7 @@ Auth::routes();
 
 Route::get('/', 'SiteController@index')->name('webindex');
 Route::get('/pagina', 'SiteController@pagina')->name('pagina');
+Route::get('/regras', 'SiteController@regras')->name('regras');
 
 // Authentication Routes...
 //Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
