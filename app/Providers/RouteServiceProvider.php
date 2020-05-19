@@ -22,7 +22,7 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = 'app/home';
-    public const RESET_PASSWORD = 'site/index';
+    public const RESET_PASSWORD = '/';
 
     /**
      * Define your route model bindings, pattern filters, etc.

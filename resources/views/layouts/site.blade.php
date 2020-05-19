@@ -9,21 +9,16 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-
     <title>New Epic War</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/site/bootstrap.min.css" rel="stylesheet">
-    <script src="js/site/jquery.min.js"></script>
-    <script src="js/site/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/site/popper.min.js"></script>
-    <script src="js/site/bootstrap.min.js"></script>
-
-    {{--    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">--}}
-    {{--    <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>--}}
-
+    <link href="{{asset('css/site/bootstrap.min.css')}}" rel="stylesheet">
+    <script src="{{asset('js/site/jquery.min.js')}}"></script>
+    <script src="{{asset('js/site/jquery-3.4.1.slim.min.js')}}"></script>
+    <script src="{{asset('js/site/popper.min.js')}}"></script>
+    <script src="{{asset('js/site/bootstrap.min.js')}}"></script>
 
     <meta name="theme-color" content="#563d7c">
     <style>
@@ -43,23 +38,34 @@
         }
 
     </style>
-    <!-- Custom styles for this template -->
-    <link href="css/site/cover.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="{{asset('css/site/cover.css')}}" rel="stylesheet">
 </head>
 
-<!--<body class="text-center">-->
 <body>
 
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v7.0"></script>
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-        <div class="header">
 
-        </div>
-    </header>
+{{--    @guest--}}
+{{--        <header class="masthead mb-auto">--}}
+{{--            <div class="header">--}}
+
+{{--            </div>--}}
+{{--            <br>--}}
+{{--            <br>--}}
+{{--            <br>--}}
+{{--            <br>--}}
+{{--        </header>--}}
+{{--    @else--}}
+        <br>
+        <br>
+        <br>
+        <br>
+{{--    @endguest--}}
 
     <main role="main" class="inner cover">
         <div class="row row-grid">
@@ -86,7 +92,7 @@
 
 </div>
 
-<script>window.jQuery || document.write('<script src="js/site/jquery-3.4.1.slim.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="{{asset('js/site/jquery-3.4.1.slim.min.js')}}"><\/script>')</script>
 
 </body>
 </html>

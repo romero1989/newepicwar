@@ -1,9 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.site')
 
 @section('content')
-    <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-10">
                 <div class="card bg-dark">
                     <div class="card-header">Guild Mark</div>
 
@@ -28,5 +27,4 @@
                 </div>
             </div>
         </div>
-    </div>
 @endsection
