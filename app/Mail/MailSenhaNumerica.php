@@ -39,7 +39,7 @@ class MailSenhaNumerica extends Mailable
             ->markdown('mail.ResetSenhaNumerica')
             ->with([
                 'name' => $this->user->name,
-                'link' => $url.':8000/app/user/confirmaresetsenhanumerica/'.$this->user->senha_numerica.'/'.$this->user->email
+                'link' => $url.'/app/user/confirmaresetsenhanumerica/'.$this->user->senha_numerica.'/'.$this->user->email
             ]);
     }
 }

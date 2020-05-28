@@ -6,12 +6,13 @@
             <div class="col-md-8">
                 <div class="card bg-dark">
                     <div class="card-header">{{ __('Confirmação de Redefinição de Senha Numérica') }}</div>
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+
                     <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
                         {{ __('Por favor, clique no botão para finalizar o processo.') }}
 
                         <form method="POST" action="{{ route('user.finalizaLinkResetSenhaNumerica', ['token'=>$token,'email'=> $email]) }}">
