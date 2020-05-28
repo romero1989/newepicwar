@@ -30,4 +30,6 @@ class MailController extends Mailable
     {
         return $this->view('view.name');
     }
+
+
 }

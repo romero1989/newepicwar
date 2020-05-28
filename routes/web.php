@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 //    return view('site/index');
 //});
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/', 'SiteController@index')->name('webindex');
 Route::get('/pagina', 'SiteController@pagina')->name('pagina');
@@ -38,5 +38,18 @@ Route::get('/regras', 'SiteController@regras')->name('regras');
 //Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
 //Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
-Route::get('app/home', 'HomeController@index')->name('app.home');
-Route::get('app/guild', 'HomeController@guild')->name('app.guildmark');
+Route::get('app/home', 'AppController@index')->name('app.home');
+Route::get('app/guild', 'AppController@guild')->name('app.guildmark');
+//Route::resource('app', 'AppController');
+
+//Route::resource('app/user', 'UserController');
+
+Route::get('app/user/senhanumerica','UserController@showLinkRequestForm')->name('user.ShowFormResetSenhaNumerica');
+Route::post('app/user/sendlinksenhanumerica','UserController@sendLinkResetSenhaNumerica')->name('user.sendLinkResetSenhaNumerica');
+Route::get('app/user/confirmaresetsenhanumerica/{token}/{email}','UserController@confirmaResetSenhaNumerica')->middleware('web')->name('user.confirmaResetSenhaNumerica');
+Route::post('app/user/finalizaresetsenhanumerica','UserController@finalizaResetSenhaNumerica')->middleware('web')->name('user.finalizaLinkResetSenhaNumerica');
+
+
+
+
+Route::resource('app/noticia', 'NoticiaController');

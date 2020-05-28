@@ -38,19 +38,19 @@
                             </div>
                         </div>
 
-                        {{--                        <div class="form-group row">--}}
-                        {{--                            <label for="senha_numerica" class="col-md-4 col-form-label text-md-right">{{ __('Senha numérica') }}</label>--}}
+{{--                        <div class="form-group row">--}}
+{{--                            <label for="senha_numerica" class="col-md-4 col-form-label text-md-right">{{ __('Senha numérica') }}</label>--}}
 
-                        {{--                            <div class="col-md-6">--}}
-                        {{--                                <input id="senha_numerica" type="password" class="form-control @error('senha_numerica') is-invalid @enderror" name="senha_numerica" value="{{ old('senha_numerica') }}" required autocomplete="senha numérica">--}}
+{{--                            <div class="col-md-6">--}}
+{{--                                <input id="senha_numerica" type="password" class="form-control @error('senha_numerica') is-invalid @enderror" name="senha_numerica" value="{{ old('senha_numerica') }}" required autocomplete="senha numérica">--}}
 
-                        {{--                                @error('senha_numerica')--}}
-                        {{--                                <span class="invalid-feedback" role="alert">--}}
-                        {{--                                        <strong>{{ $message }}</strong>--}}
-                        {{--                                    </span>--}}
-                        {{--                                @enderror--}}
-                        {{--                            </div>--}}
-                        {{--                        </div>--}}
+{{--                                @error('senha_numerica')--}}
+{{--                                <span class="invalid-feedback" role="alert">--}}
+{{--                                                                <strong>{{ $message }}</strong>--}}
+{{--                                                            </span>--}}
+{{--                                @enderror--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                         <div class="form-group row">
                             <label for="pergunta_secreta" class="col-md-4 col-form-label text-md-right">{{ __('Pergunta Secreta') }}</label>
